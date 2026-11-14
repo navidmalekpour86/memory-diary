@@ -1,5 +1,5 @@
-import { SUPABASE_URL, SUPABASE_ANON_KEY } from './config.js';
-import { STRINGS, PLACE_ICONS, CRITERIA } from './strings.js';
+import { SUPABASE_URL, SUPABASE_ANON_KEY } from './config.js?v=4';
+import { STRINGS, PLACE_ICONS, CRITERIA } from './strings.js?v=4';
 
 const sb = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 const app = document.getElementById('app');

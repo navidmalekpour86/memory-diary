@@ -14,7 +14,7 @@
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-title" content="خاطرات ما">
   <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=4">
   <!-- Libraries are bundled locally so the app does not depend on CDNs that may be filtered in Iran. -->
   <script src="vendor/leaflet/leaflet.js"></script>
   <script src="vendor/supabase.js"></script>
@@ -35,6 +35,7 @@
   </header>
   <main id="app"></main>
   <dialog id="viewer"><img alt=""><button class="close" aria-label="Close">✕</button></dialog>
-  <script type="module" src="app.js"></script>
+  <!-- Bump ?v= on every update so phones don't mix old and new files from cache. -->
+  <script type="module" src="app.js?v=4"></script>
 </body>
 </html>
