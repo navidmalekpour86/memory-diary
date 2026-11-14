@@ -74,5 +74,5 @@ create policy "members only" on storage.objects for all to authenticated
 
 -- >>> Change these to your two emails and names <<<
 insert into public.members (email, name) values
-  ('you@example.com', 'Navid'),
-  ('partner@example.com', 'Sanaz');
+  ('navidmalekpour@gmail.com', 'Navid'),
+  ('sanazaa76@gmail.com', 'Sanaz');
