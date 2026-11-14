@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>خاطرات ما</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💛</text></svg>">
+  <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Libraries are bundled locally so the app does not depend on CDNs that may be filtered in Iran. -->
+  <script src="vendor/leaflet/leaflet.js"></script>
+  <script src="vendor/supabase.js"></script>
+</head>
+<body>
+  <header id="top" hidden>
+    <a href="#/" class="brand">💛 <span data-t="appName"></span></a>
+    <nav>
+      <a href="#/" data-nav="timeline" data-t="timeline"></a>
+      <a href="#/calendar" data-nav="calendar" data-t="calendar"></a>
+      <a href="#/map" data-nav="map" data-t="map"></a>
+    </nav>
+    <a href="#/new" class="btn primary" data-t="newMemory"></a>
+    <button id="lang" class="link" data-t="switchTo"></button>
+    <button id="signout" class="link" data-t="signOut"></button>
+  </header>
+  <main id="app"></main>
+  <dialog id="viewer"><img alt=""><button class="close" aria-label="Close">✕</button></dialog>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
