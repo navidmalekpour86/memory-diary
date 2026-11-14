@@ -2,7 +2,7 @@
 <html lang="fa" dir="rtl">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="robots" content="noindex">
   <title>خاطرات ما</title>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💛</text></svg>">
@@ -22,10 +22,12 @@
 <body>
   <header id="top" hidden>
     <a href="#/" class="brand">💛 <span data-t="appName"></span></a>
+    <!-- On phones this becomes a bottom tab bar (see styles.css). -->
     <nav>
-      <a href="#/" data-nav="timeline" data-t="timeline"></a>
-      <a href="#/calendar" data-nav="calendar" data-t="calendar"></a>
-      <a href="#/map" data-nav="map" data-t="map"></a>
+      <a href="#/" data-nav="timeline"><span class="ic">📖</span><span data-t="timeline"></span></a>
+      <a href="#/calendar" data-nav="calendar"><span class="ic">📅</span><span data-t="calendar"></span></a>
+      <a href="#/map" data-nav="map"><span class="ic">🗺️</span><span data-t="map"></span></a>
+      <a href="#/new" data-nav="new" class="nav-new"><span class="ic">➕</span><span data-t="newMemory"></span></a>
     </nav>
     <a href="#/new" class="btn primary" data-t="newMemory"></a>
     <button id="lang" class="link" data-t="switchTo"></button>

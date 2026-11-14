@@ -152,7 +152,7 @@ function timelineView(filter, best) {
     html += card(m);
   }
   if (month) html += '</div>';
-  app.innerHTML = `<div class="chips">${chips}</div><div class="chips">${sorts}</div>${html || `<p class="empty">${filter ? T.emptyFilter : T.empty}</p>`}`;
+  app.innerHTML = `<div class="chips">${sorts}<span class="sep"></span>${chips}</div>${html || `<p class="empty">${filter ? T.emptyFilter : T.empty}</p>`}`;
 }
 
 function calendarView() {
@@ -253,7 +253,7 @@ function detailView(id) {
 }
 
 function editorView(id) {
-  setActiveNav('');
+  setActiveNav(id ? '' : 'new');
   const m = id ? byId(id) : null;
   if (id && !m) return (location.hash = '#/');
   let pos = m && m.lat != null ? [m.lat, m.lng] : null;
